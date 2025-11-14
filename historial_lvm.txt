@@ -1,0 +1,54 @@
+    1  cat /etc/os-release
+    2  id
+    3  lsblk
+    4  sudo fdisk/dev/sdb
+    5  sudo fdisk /dev/sdb
+    6  lsblk
+    7  sudo fdisk -l /dev/sdb
+    8  ls blk
+    9  lsblk
+   10  sudo fdisk /dev/sdd
+   11  lsblk
+   12  sudo fdisk /dev/sdd
+   13  sudo fdisk -l /dev/sdd
+   14  sudo fdisk /dev/sdd
+   15  sudo fdisk -l /dev/sdd
+   16  sudo fdisk /dev/sdd
+   17  sudo fdisk -l /dev/sdd
+   18  sudo mkswap /dev/sdd1
+   19  sudo swapon /dev/sdd1
+   20  sudo swapon --show
+   21  free -h
+   22  sudo fdisk /dev/sdc
+   23  ls -l
+   24  cat carpeta_compartida/
+   25  sudo fdisk /dev/sdd
+   26  ls -l
+   27  ls
+   28  lsblk
+   29  sudo fdisk /dev/sdc
+   30  lsblk
+   31  sudo fdisk /dev/sdc
+   32  sudo fdisk -l /dev/sdc
+   33  sudo wipefs -a /dev/sdd2
+   34  sudo wipefs -a /dev/sdd3
+   35  sudo wipefs -a /dev/sdd5
+   36  sudo wipefs -a /dev/sdd6
+   37  sudo wipefs -a /dev/sdc2
+   38  sudo wipefs -a /dev/sdc1
+   39  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   40  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   41  sudo vgs
+   42  sudo pvs
+   43  sudo vgcreate vg_web /dev/sdc2
+   44  sudo vgs
+   45  sudo pvs
+   46  sudo lvcreate -L 1G vg_web -n lv_web1
+   47  sudo lvs
+   48  sudo lvcreate -L 512M vg_web -n lv_web2
+   49  sudo lvcreate -L 512M vg_web -n lv_web3
+   50  sudo lvs
+   51  sudo fdisk -l
+   52  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   53  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   54  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
